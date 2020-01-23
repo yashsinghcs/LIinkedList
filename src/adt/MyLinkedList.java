@@ -5,11 +5,11 @@ public class MyLinkedList<E> implements LinkedListADT<E> {
         private E data;
         private Node<E> next;
 
-        public E getData() {
+        private E getData() {
             return data;
         }
 
-        public Node<E> getNext() {
+        private Node<E> getNext() {
             return next;
         }
 
