@@ -7,6 +7,9 @@ public class MyLinkedList<E> implements LinkedListADT<E> {
         private E data;
         private Node<E> next;
 
+        public Node(E item, Node<E> head) {
+        }
+
         private E getData() {
             return data;
         }
@@ -15,7 +18,12 @@ public class MyLinkedList<E> implements LinkedListADT<E> {
             return next;
         }
 
+        private void addFirst(E item) {
+            head = new Node<>(item, head);
+        }
+
     }
+
 
     @Override
     public void add(int index, E item) {
