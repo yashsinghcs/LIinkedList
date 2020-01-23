@@ -3,6 +3,7 @@ package adt;
 public class MyLinkedList<E> implements LinkedListADT<E> {
     private static class Node<E> {
         private Node<E> head = null;
+        private int size = 0;
         private E data;
         private Node<E> next;
 
